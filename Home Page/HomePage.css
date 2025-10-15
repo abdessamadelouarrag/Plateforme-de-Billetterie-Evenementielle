@@ -4,10 +4,16 @@
     font-family: "Nunito Sans", sans-serif;
 }
 
+/* nav bar */
+
 header {
     position: fixed;
     color: rgb(255, 255, 255);
+    background-image: url(/images/klm.png);
+    background-position: center;
     width: 100%;
+    z-index: 100;
+    top: 0%;
 
 }
 
@@ -44,6 +50,13 @@ a {
     border-radius: 20px;
 }
 
+.logo img {
+    width: 120px;
+    height: 30px;
+}
+
+/* first section events */
+
 .first {
     display: flex;
     justify-content: center;
@@ -51,6 +64,7 @@ a {
     background: url(/images/bg2.png), url(/images/bg.png);
     background-size: cover;
     height: 100vh;
+    margin-top: -2px;
 }
 
 .first .element {
@@ -64,11 +78,6 @@ a {
     margin-right: 40px;
 }
 
-.logo img {
-    width: 120px;
-    height: 30px;
-}
-
 .button button {
     padding: 10px 40px;
     border-radius: 30px;
@@ -78,6 +87,7 @@ a {
     font-size: 20px;
 }
 
+
 .button #btn-events {
     background-color: #F5167E;
 }
@@ -85,6 +95,8 @@ a {
 .button #btn-blog {
     border: 2px solid #ffffff;
 }
+
+/* banner recherche  */
 
 .recherche {
     margin-top: 50px;
@@ -107,10 +119,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 
-label {
+.recherche label {
     display: block;
 }
 
@@ -120,6 +133,8 @@ select {
     background: none;
     border: none;
 }
+
+/* section events */
 
 .events {
     margin-top: 130px;
@@ -193,7 +208,6 @@ select {
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
-
 }
 
 .button-lead button {
@@ -204,6 +218,32 @@ select {
     color: #3D37F1;
     border-radius: 40px;
 }
+
+/* section brands */
+
+.brands{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-brand{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.text-brand h3{
+    color: #242565;
+    font-size: 25px;
+}
+
+.text-brand h4{
+    color: #6A6A6A;
+}
+
+/* section blog */
 
 .card-blog {
     display: flex;
@@ -251,6 +291,8 @@ select {
 .title-blog h4 {
     color: #6A6A6A;
 }
+
+/* section footer */
 
 footer {
     background-color: #0A075F;
