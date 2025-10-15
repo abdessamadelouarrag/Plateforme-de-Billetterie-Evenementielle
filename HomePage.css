@@ -6,20 +6,42 @@
 
 header {
     position: fixed;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     width: 100%;
+
+}
+
+nav {
+    display: grid;
+    gap: 300px;
 }
 
 ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
-    padding: 20px 20px 20px 20px;
+    margin: 30px 60px;
 }
 
 a {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.list-nav {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.border button{
+    border: 1px solid #ffffff;
+    background: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .first {
@@ -37,7 +59,7 @@ a {
 }
 
 .first .text-of-image {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     margin-right: 40px;
 }
@@ -52,7 +74,7 @@ a {
     border-radius: 30px;
     border: none;
     background: none;
-    color: #ccc;
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -61,17 +83,18 @@ a {
 }
 
 .button #btn-blog {
-    border: 2px solid #ccc;
+    border: 2px solid #ffffff;
 }
 
 .recherche {
+    margin-top: 50px;
     display: flex;
     width: 950px;
     height: 105px;
     justify-content: space-around;
     align-items: center;
     background-color: #242565;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     border: none;
     position: absolute;
     border-radius: 20px;
@@ -79,10 +102,12 @@ a {
 }
 
 .all {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 label {
     display: block;
@@ -95,37 +120,149 @@ select {
     border: none;
 }
 
-.events1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding-top: 20px;
+.events {
+    margin-top: 130px;
 }
 
-.events-part {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
+.events-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 50px 90px;
+    gap: 30px;
+
 }
 
 .all-cards {
-    width: 325px;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 1px 2px #242565;
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.title-events{
-    position: absolute;
-    text-align: center;
-    font-size: 32px;
+.all-cards img {
+    width: 100%;
+}
+
+#this {
+    grid-column: 1 / 3;
+}
+
+#this img {
+    height: 220px;
+}
+
+.all-cards .text {
+    padding: 20px;
+    margin-bottom: auto;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.date {
+    margin-top: 22px;
+    margin-left: 23px;
+    font-size: 20px;
+}
+
+.Up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
     margin-bottom: 40px;
-    font-weight: 800;
-    top: 80px;
+}
+
+.row-option {
+    display: flex;
+    gap: 40px;
+}
+
+.row-option select {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F2F4FF;
+}
+
+.button-lead {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+.button-lead button {
+    padding: 17px 40px;
+    border: none;
+    background: none;
+    border: 2px solid #3D37F1;
+    color: #3D37F1;
+    border-radius: 40px;
+}
+
+.card-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 40px;
+}
+
+.card {
+    width: 345px;
+    height: 430px;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text-blog {
+    margin: 10px;
+}
+
+.text-blog h4 {
+    color: #242565;
+}
+
+.text-blog h6 {
+    color: #A5A5A5;
+}
+
+.card img {
+    width: 100%;
+}
+
+.title-blog {
+    margin-top: 60px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-blog h2 {
+    color: #242565;
+}
+
+.title-blog h4 {
+    color: #6A6A6A;
+}
+
+footer {
+    background-color: #0A075F;
+    width: 100%;
+    height: 100%;
+}
+
+.all-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footers{
+    width: 300px;
 }
