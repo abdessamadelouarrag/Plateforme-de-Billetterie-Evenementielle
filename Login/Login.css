@@ -93,6 +93,10 @@ a {
     font-size: 32px;
 }
 
+form{
+    display: grid;
+}
+
 .inputs .login-btn{
     width: 130px;
     height: 48px;

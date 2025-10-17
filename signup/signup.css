@@ -90,6 +90,10 @@ a {
     font-size: 32px;
 }
 
+form{
+    display: grid;
+}
+
 .inputs button{
     width: 130px;
     height: 48px;
