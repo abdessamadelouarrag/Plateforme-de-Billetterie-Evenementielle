@@ -55,6 +55,10 @@ a {
     border-radius: 20px;
 }
 
+.border .lgn{
+    color: #FF78F6;
+}
+
 .logo img {
     width: 120px;
     height: 30px;
